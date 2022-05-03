@@ -12,6 +12,7 @@ mongoose.connection.on("error", (err) => {
   console.log(`Database connection error ${err.message}`);
 });
 
+require("./models/xeroxCustomer");
 const app = require("./app");
 
 const server = app.listen(3000, () => {
