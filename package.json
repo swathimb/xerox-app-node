@@ -1,0 +1,28 @@
+{
+  "name": "xerox-app-node",
+  "version": "1.0.0",
+  "description": "Xerox app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "node server",
+    "watch": "nodemon server --ignore public/",
+    "start": "npm run watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swathimb/xerox-app-node.git"
+  },
+  "author": "Swathi MB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swathimb/xerox-app-node/issues"
+  },
+  "homepage": "https://github.com/swathimb/xerox-app-node#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.2",
+    "nodemon": "^2.0.16"
+  }
+}
