@@ -1,19 +1,9 @@
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
-const userDocumentsSchema = new mongoose.Schema({
-  userId: {
-    type: String,
-  },
-  documentId: {
-    type: String,
-  },
-  documentToPrint: {
-    type: Blob,
-  },
-  numberOfCopies: {
-    type: Number,
-  },
+var userDocument = new mongoose.Schema({
+  userId: String,
+  document: String,
+  noOfCopies: Number,
 });
-
-module.exports = mongoose.model("userDocuments", userDocumentsSchema);
+module.exports = new mongoose.model("userDocument", userDocument);
