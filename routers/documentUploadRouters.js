@@ -21,5 +21,12 @@ router.post(
   upload.single("file"),
   documentUploadController.addDocuments
 );
+router.get("/getDocument/:id", documentUploadController.getSingleDocument);
+router.put(
+  "/updateDocument/:id",
+  upload.single("file"),
+  documentUploadController.updateDocument
+);
+router.delete("/deleteDocument/:id", documentUploadController.deleteDocument);
 
 module.exports = router;
